@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajero</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="products" id="productTable">
+        <h2>Productos Disponibles</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody class="max-width-select">
+            <!-- Filas de productos se agregarán aquí dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+      <div class="products">
+        <h2>Realizar pedido</h2>
+        <div id="container"></div>
+        <br /><br />
+        <button id="addOrderBtn">Agregar otro producto</button>
+        <br />
+        <button id="reset" class="trash-btn">Resetear pedido</button>
+        <br />
+        <button id="accept-btn">Aceptar</button>
+      </div>
+      <div class="orders">
+        <h2>Pedidos pendientes</h2>
+        <ul id="orderList">
+          <!-- Los pedidos se agregarán aquí dinámicamente -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

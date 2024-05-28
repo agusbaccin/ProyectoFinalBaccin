@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.products {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.orders {
+    flex: 1;
+    padding: 10px;
+}
+
+#productTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#productTable th, #productTable td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#productTable th {
+    background-color: #f2f2f2;
+}
+
+#orderList li {
+    margin-bottom: 20px; /* Espacio entre pedidos */
+    position: relative; /* Permitir posicionamiento relativo */
+}
+
+#orderList button, #accept-btn, #addOrderBtn {
+    display: block; /* Convertir el botón en un elemento de bloque */
+    background-color: green; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 5px 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    margin-top: 10px; /* Espacio superior */
+}
+
+#orderList button:hover, #accept-btn:hover, #addOrderBtn:hover {
+    background-color: darkgreen; /* Cambiar color de fondo al pasar el mouse */
+}
+
+.trash-btn {
+    background-color: #f30606; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espacio alrededor del icono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    color: white; /* Color de texto blanco */
+}
+  
+.trash-btn:hover {
+    background-color: #910606; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.max-width-select {
+    max-width: 200px;
+}
+
